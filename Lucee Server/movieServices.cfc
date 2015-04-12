@@ -16,6 +16,14 @@
 		<cfargument name="page" default="0">
 		<cfargument name="returnSet" default="50">
 		<cfargument name="searchStr" default="">
+		<cfargument name="token" default="">
+		
+		<!--- require a static key to access the service --->
+		<cfif arguments.token NEQ "dhd7dteg56533d">
+			<cfset var error = "Service Not Available" />
+			<cfreturn error/>
+		</cfif>
+		
 		<cfset var data = _getMovies(page=arguments.page,returnSet=arguments.returnSet,searchStr=arguments.searchStr)>
 		
 		<!--- serialize --->
