@@ -1,0 +1,43 @@
+<div class="mainLayout">
+    <section class="fixedHeaderContainer">
+        <h2 class="siteTitle">{{ appSettings.title }}</h2>
+        <section class="searchBox">
+            Search: <input type="text" ng-model="searchStr" />
+            <div class="moviesFound">Movies found: {{totalItems}}</div>
+        </section>
+        <div class="clearboth"></div>
+
+        <section class="headerSection">
+                <div class="movieHeaderLeft">
+                    <div class="movieId h30">Id</div>
+                    <div class="movieTitle h30"><span class="mo_underline" ng-click="doSort('title')">Title</span></div>
+                    <div class="movieDescription h30">Description</div>
+                </div>
+                <div class="movieHeaderRight">Logo</div>
+                <div class="clearboth"></div>
+        </section>
+    </section>    
+
+    <section class="movieItmes">
+        <div ng-repeat="movie in movies | filter:customerFilter | orderBy:sortBy:reverse" class="repeat-animation movieRow">
+            <div class="movieDetailsContainter">
+                <div class="movieId">{{ movie.film_id }}</div>
+                <div class="movieTitle">{{ movie.title }}</div>
+                <div class="movieDescription">{{ movie.description }}</div>
+            </div>
+            <div class="movieLogoContainter">
+                <img ng-src="images/{{movie.poster}}" alt="movie poster for {{movie.title|lowercase}}" class="posterImg" />
+            </div>
+            <div class="clearboth"></div>
+        </div>
+    </section>
+    
+
+    <div id="paginationBar" class="center"></div>
+
+    <footer class="center">
+        <span>Version: {{ appSettings.version }}</span>
+        <span class="mLeft20">{{ appSettings.author }}</span>
+        <span class="mLeft20">{{ appSettings.phone }}</span>
+    </footer>
+</div>

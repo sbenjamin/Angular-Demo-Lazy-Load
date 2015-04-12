@@ -1,0 +1,196 @@
+body {
+    overflow: auto;   
+}
+
+.mainLayout{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.siteTitle{
+    margin: 2px 0 5px 5px;
+    float: left;
+}
+
+.headerSection{
+    font-weight: bold;
+}
+
+.headerTable{
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin-bottom: 0px;
+}
+
+.fixedHeaderContainer{
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    max-width: 1100px;
+    border-bottom:#ddd 1px solid;
+}
+
+th {
+    text-align: left;
+    background-color: #efefef;
+}
+
+tr.footer {
+    background-color: #efefef;
+}
+
+main {
+    overflow: auto;
+}
+
+.center {
+    text-align: center;   
+}
+
+.delete {
+    color: red; 
+    cursor: pointer;
+}
+
+
+
+.posterHeader{
+    text-align: left;
+    width: 120px;
+}
+
+/* Table Rows */
+
+.movieRow{
+    height:75px;
+    position: relative;
+    margin-bottom: 2px;
+    border: 1px solid #ddd;
+}
+
+.movieItmes{
+    margin-top: 100px;
+    max-height: 440px;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.movieItmes > div.movieRow:nth-child(odd){
+    background-color: #ddd;
+}
+
+.movieDetailsContainter{
+    width: auto;
+    overflow: hidden;
+    height: 74px;
+    margin-right: 65px;
+    position: relative;
+    top: -2px;
+}
+
+
+
+.movieLogoContainter{
+    width: 60px;
+    height: 75px;
+    float: right;
+    position: relative;
+    top: -76px;
+}
+
+
+
+.movieHeaderLeft{
+    width: auto;
+    overflow: hidden;
+    height: 30px;
+    margin-right: 65px;
+    position: relative;
+    top: -9px;
+}
+
+.movieHeaderRight{
+    width: 68px;
+    height: 30px;
+    float: right;
+    position: relative;
+    top: -37px;
+}
+
+.movieId{
+    text-align: center;
+    width:50px;
+    height:75px;
+    max-height: 75px;
+    float:left;
+}
+
+.movieTitle{
+    text-align: left;
+    width:180px;
+    height:75px;
+    max-height: 75px;
+    float:left;
+}
+
+.movieDescription{
+    text-align: left;
+    height: 75px;
+    max-height: 75px;
+    width:auto;
+    float:none;
+}
+
+
+.posterImg{
+    width:56px;
+    height:75px;
+}
+
+/* bootstrap anguar*/
+/*ref: https://angular-ui.github.io/bootstrap/*/
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.mLeft20{
+    margin-left: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+.mo_underline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.searchBox{
+    margin: 10px 0 20px 0;
+    float: right;
+    margin-right: 9px;
+    font-weight: bold;
+}
+
+.moviesFound{
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.noTopBorder{
+    color: red;
+    border-top: 1px solid red !important;
+}
+
+
+/* Tableless layout */
+.clearboth{
+    clear:both;
+}
+
+.h30{
+    height:30px;
+}

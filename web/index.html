@@ -1,0 +1,25 @@
+<!doctype html>
+<!--- Steven Benjamin April 11, 2015 --->
+<html ng-app="moviesApp">
+    <head>
+        <title>Angular Demo: Movies Dataset</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/bootstrap.css" rel="stylesheet">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+        <link href="styles/animations.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>  
+        <main>
+            <div ui-view class="slide-animation"></div>
+        </main>    
+        <script src="scripts/angular.js"></script>
+        <script src="scripts/angular-ui-router.js"></script>
+        <script src="scripts/ocLazyLoad.js"></script>
+        <script src="scripts/angular-animate.js"></script>
+        <script src="scripts/ui-bootstrap-pagination-tpls-0.12.1.js"></script>
+        <script src="app/app.js"></script>
+        <script src="app/controllers/MoviesController.js"></script>
+        <script src="app/services/MoviesFactory.js"></script>
+        <script src="app/services/values.js"></script>
+    </body>
+</html>
